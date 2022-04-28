@@ -64,4 +64,78 @@ print(str[2:]  )     # Prints string starting from 3rd character
 print(str * 2   )    # Prints string two times
 print(str + "test")   #prints concatenated string
 
+#python lists
+list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+tinylist = [123, 'john']
+
+print (list)            # Prints complete list
+print (list[0])         # Prints first element of the list
+print (list[1:3])       # Prints elements starting from 2nd till 3rd
+print (list[2:])        # Prints elements starting from 3rd element
+print (tinylist * 2)    # Prints list two times
+print (list + tinylist)  #Prints concatenated lists
+
+
+# printing all list items by using for loop
+for x in range(len(list)):
+    print (list[x])
+#printing the list using * operator seperated space
+print (*list)
+
+#printing the list using * and separate by the comma
+print (*list,sep=",")
+
+#printing the list in new line
+print (*list,sep="\n")
+
+
+tuple = ( 'abcd', 786 , 2.23, 'john', 70.2)
+tinytuple = (123, 'john')
+
+print (tuple)            # Prints complete tuple
+print (tuple[0])         # Prints first element of the tuple
+print (tuple[1])
+print (tuple[1:3])       # Prints elements starting from 2nd till 3rd
+print (tuple[2:])        # Prints elements starting from 3rd element
+print (tinytuple * 2)    # Prints list two times
+print (tuple + tinytuple)  #Prints concatenated tuple
+
+print("length of the tuple is:")
+print(len(tuple))
+#printing all tuple items
+for x in range(len(tuple)):
+    print(tuple[x])
+#tuple is read only or fixed value
+#list can change value
+
+dict = {}
+dict['one'] = "This is one"
+dict[2] = "This is two"
+
+tinydict = {'name':'john','code':6734, 'dept':'sales'}
+
+print (dict['one'])   #Prints value for 'one' key
+print (dict[2]     )  # Prints value for 2 key
+print (tinydict     ) # Prints complete dictionary
+print (tinydict.keys())  #Prints all the keys
+print (tinydict.values()) #Prints all the values
+
+
+#iterate over key/value pair in dict and then print
+for key, value in tinydict.items():
+    print(key,":",value)
+
+
+#convert from int to float:
+x= float(1)
+#convert from float to int:
+y=int(2.8)
+#convert from int to complex:
+z = complex(x)
+print(x)
+print(y)
+print(z)
+print(type(x))
+print(type(y))
+print(type(z))
 
