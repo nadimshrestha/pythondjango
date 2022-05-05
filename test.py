@@ -139,3 +139,30 @@ print(type(x))
 print(type(y))
 print(type(z))
 
+#BASIC  Arithmetic Operations
+num1 = 100
+num2 = 100
+sum = num1 + num2
+print(sum)
+print("The sum of %d and %d is %d" % (num1, num2, sum))
+print("The sum of {0} and {1} is {2}".format(num1, num2, sum))
+
+#userinput
+firstNum = input("Enter the first Number:")
+secondNum = input("Enter the second Number:")
+
+#add two number
+sumTwo = float(firstNum) + float(secondNum)
+
+print("The sum of {0} and {1} is {2}".format(firstNum, secondNum, sumTwo))
+
+
+num = int(input("Enter any number to test wheather odd or even:"))
+if(num%2)==0:
+ print("{0} is even".format(num))
+else:
+ print("{0} is odd".format(num))
+
+
+
+
